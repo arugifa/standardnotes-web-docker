@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    command: start
+
+  sut:
+    image: alpine:latest
+    # Wait for the web interface to start before running tests.
+    command: >
+      sh -c 'for i in 1 2 3 4 5 6; do wget app:3000 && break || if [ "$$i" != 6 ]; then sleep 10 ; else exit 1 ; fi; done'
+    depends_on:
+      - app
