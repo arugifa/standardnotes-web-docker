@@ -3,7 +3,7 @@
 FROM ruby:alpine
 
 ENV PROJECT_REPO=https://github.com/standardnotes/web
-ENV PROJECT_TAG=3.0.8
+ENV PROJECT_TAG=3.0.14
 ENV PROJECT_DIR=/app/
 
 RUN apk add --update --no-cache \
