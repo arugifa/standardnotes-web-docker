@@ -1,6 +1,10 @@
 Standard Notes Web Interface's Image for Docker
 ===============================================
 
+**IMPORTANT: The author of Standard Notes has released a
+[Docker image](https://hub.docker.com/r/standardnotes/web).
+Please use it from now on, instead of mine.**
+
 Unfortunately, the core developer of [Standard Notes](https://standardnotes.org/)
 doesn't maintain Docker images for the different components of his web service
 (which can be [self-hosted](https://docs.standardnotes.org/self-hosting/self-hosting-with-docker)).
